@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Versículos</title>
+  <title>Agenda de Eventos Igreja Batista Independente</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>📖 Gerador de Versículos</h1>
-    <p id="versiculo">Clique no botão para receber uma mensagem bíblica 🙏</p>
-    <button onclick="gerarVersiculo()">Gerar Versículo</button>
+    <h1>Agenda de Eventos <br>Igreja Batista Independente</h1>
+
+    <form id="eventForm">
+      <input type="text" id="eventName" placeholder="Nome do evento" required>
+      <input type="date" id="eventDate" required>
+      <input type="time" id="eventTime" required>
+      <input type="text" id="eventDescription" placeholder="Descrição curta" required>
+      <button type="submit">Adicionar Evento</button>
+    </form>
+
+    <h2>Próximos Eventos</h2>
+    <ul id="eventList"></ul>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
